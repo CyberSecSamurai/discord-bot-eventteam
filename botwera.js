@@ -103,10 +103,6 @@ client.on('ready', async () => {
     .setCustomId('open_form')
     .setLabel('Formularz ET')
     .setStyle(ButtonStyle.Secondary);
-
-  await channel.send({
-    embeds: [embed],
-    components: [new ActionRowBuilder().addComponents(button)]
   });
 });
 
